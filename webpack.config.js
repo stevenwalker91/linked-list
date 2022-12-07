@@ -1,5 +1,4 @@
 const path = require('path');
-const { LinkedList } = require('./src/linked-list');
 
 module.exports = {
   mode: 'production',
