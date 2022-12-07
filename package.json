@@ -1,6 +1,6 @@
 {
   "name": "@woftis/linked-list",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A JS implementation of linked lists",
   "main": "dist/main.js",
   "scripts": {
