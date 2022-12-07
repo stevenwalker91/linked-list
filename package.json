@@ -1,8 +1,8 @@
 {
-  "name": "linked-list",
-  "version": "1.0.0",
+  "name": "@woftis/linked-list",
+  "version": "0.0.2",
   "description": "A JS implementation of linked lists",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",

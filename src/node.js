@@ -1,7 +1,7 @@
-const Node = (value = null) => {
+const Node = (value = null, next = null) => {
   return {
     value,
-    next: null,
+    next,
     updateValue: (updatedValue) => {
       this.value = updatedValue;
     },

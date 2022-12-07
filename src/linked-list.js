@@ -1,12 +1,4 @@
-const Node = (value = null, next = null) => {
-  return {
-    value,
-    next,
-    updateValue: (updatedValue) => {
-      this.value = updatedValue;
-    },
-  };
-};
+import * as newNode from './node.js';
 
 const LinkedList = (headObject) => {
   // initialise size with 1 to account for the head being added when list is created
@@ -46,7 +38,7 @@ const LinkedList = (headObject) => {
 
   // Add a new node at the end of the list
   const appendNode = (value) => {
-    const node = Node(value);
+    const node = newNode.Node(value);
     let nodeExists = head;
 
     // check that next is not null and iterate until end of the list
@@ -59,7 +51,7 @@ const LinkedList = (headObject) => {
 
   // Add a new head
   const prependNode = (value) => {
-    const node = Node(value, head);
+    const node = node.Node(value, head);
     head = node;
     size++;
   };
@@ -128,7 +120,7 @@ const LinkedList = (headObject) => {
     while (counter < index) {
       if (index - counter === 1) {
         const childNode = nodeToCheck.next;
-        const newNode = Node(value, childNode);
+        const newNode = newNode.Node(value, childNode);
         nodeToCheck.next = newNode;
       }
       nodeToCheck = nodeToCheck.next;
@@ -190,16 +182,4 @@ const LinkedList = (headObject) => {
   };
 };
 
-//console.log(newNode);
-const list = LinkedList(Node('zero'));
-
-list.appendNode('one');
-list.appendNode('two');
-list.appendNode('three');
-
-console.log(list.toString);
-//console.log(list.size);
-list.removeAt(0);
-console.log(list.toString);
-console.log(list.size);
-console.log(list.at(2));
+export { LinkedList };

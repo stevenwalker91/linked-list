@@ -17,5 +17,6 @@
 | `contains(value)` | Returns `true` if the list contains the passed value, else returns `false` |
 | `find(value)` | Returns the index number of the value if the list contains the passed value, else returns `null` |
 | `insertAt(index, value)` | Adds value to the specified index position of the list. If `0` is provided, it will prepend to the head, if `index` is greater than list size it will append to the tail |
+| `removeAt(index)` | Removes value from the specified index position of the list. If `0` is provided, it will remove the head, if `index` is greater than list size it will return `null` |
 
 
