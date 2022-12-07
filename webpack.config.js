@@ -1,21 +1,27 @@
 const path = require('path');
+const { LinkedList } = require('./src/linked-list');
 
 module.exports = {
-	mode: 'development',
-	entry: './src/index.js',
-	devtool: 'inline-source-map',
-	devServer: {
-		static: './dist',
-	},
-	output: {
-		filename: '[name].js',
-		path: path.resolve(__dirname, 'dist'),
-		clean: {
-			keep: 'index.html',
-		},
-	},
+  mode: 'production',
+  entry: './src/index.js',
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: {
+      keep: 'index.html',
+    },
+    globalObject: 'this',
+    library: {
+      name: 'linkedList',
+      type: 'umd',
+    },
+  },
 
-	module: {
-		rules: [],
-	},
+  module: {
+    rules: [],
+  },
 };
