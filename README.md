@@ -1,6 +1,6 @@
 # Linked List
 
-### Overview
+## Overview
 
 This is a JavaScript implementation of a linked list that can be imported by applications. It comes with a number of methods to read and mutate the list.
 
@@ -12,13 +12,13 @@ On the flip side, linked lists do not have an index, each item just points to th
 
 Each has their advantages for different scenarios.
 
-### Get Started
+#### Get Started
 
 #### Install
 
 `npm install @woftis/linked-list --save`
 
-####Usage
+#### Usage
 
 1. Import it in your app
 2. Create the first node (head) of your list by calling `newNode.Node(value);` with relevant value
