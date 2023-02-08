@@ -12,7 +12,7 @@ On the flip side, linked lists do not have an index, each item just points to th
 
 Each has their advantages for different scenarios.
 
-#### Get Started
+### Get Started
 
 #### Install
 
